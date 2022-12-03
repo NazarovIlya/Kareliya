@@ -1,0 +1,17 @@
+﻿<h1>Делаем рандомный вывод статей:</h1>
+
+@{
+	int random = Randomize.Page();
+	switch (random)
+	{
+		case 1:
+			<Counter />
+			break;
+		case 2:
+			<FetchData />
+			break;
+		default:
+			<h3>Get Katya!!!</h3>
+			break;
+	}
+}
